@@ -29,7 +29,7 @@ export default function HomeWeb() {
               <p className={styles.bv_ola}>Olá, {primeiroNome}!</p>
               <p className={styles.bv_sub}>Boas vindas ao<br />Raízes do Nordeste.</p>
             </div>
-            <img src="/img/logo.png" alt="" aria-hidden="true" className={styles.bv_img} />
+            <img src={`${import.meta.env.BASE_URL}img/logo.png`} alt="" aria-hidden="true" className={styles.bv_img} />
           </div>
 
           <Link to="/web/cardapio" className={styles.card_fazer_pedido}>
@@ -65,7 +65,7 @@ export default function HomeWeb() {
             </div>
           </div>
           <div className={styles.hero_imagem_wrapper}>
-            <img src="/img/banner-2.jpg" alt="Pratos nordestinos" className={styles.hero_img} />
+            <img src={`${import.meta.env.BASE_URL}img/banner-2.jpg`} alt="Pratos nordestinos" className={styles.hero_img} />
           </div>
         </div>
       </section>

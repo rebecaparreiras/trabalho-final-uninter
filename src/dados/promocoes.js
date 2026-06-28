@@ -9,7 +9,7 @@ export const promocoes = [
     desconto: 5.00,
     badge: '-R$5,00',
     validade: '2026-08-31',
-    imagem: '/img/cafe-tapioca.webp',
+    imagem: `${import.meta.env.BASE_URL}img/cafe-tapioca.webp`,
     ativa: true,
   },
   {
@@ -20,7 +20,7 @@ export const promocoes = [
     desconto: 5.00,
     badge: 'Combo',
     validade: '2026-07-31',
-    imagem: '/img/combo.webp',
+    imagem: `${import.meta.env.BASE_URL}img/combo.webp`,
     ativa: true,
   },
   {
@@ -31,7 +31,7 @@ export const promocoes = [
     percentual: 10,
     badge: '10% off',
     validade: '2026-12-31',
-    imagem: '/img/primeira-compra.jpeg',
+    imagem: `${import.meta.env.BASE_URL}img/primeira-compra.jpeg`,
     ativa: true,
   },
 ]

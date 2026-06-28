@@ -1,4 +1,4 @@
-import { createBrowserRouter, Outlet } from 'react-router-dom'
+import { createHashRouter, Outlet } from 'react-router-dom'
 import BottomNav from '../componentes/layout/BottomNav'
 import HeaderWeb from '../componentes/layout/HeaderWeb'
 import NavWeb from '../componentes/layout/NavWeb'
@@ -87,7 +87,7 @@ function LayoutTotem() {
   )
 }
 
-const rotas = createBrowserRouter([
+const rotas = createHashRouter([
   // canal mobile
   {
     element: <LayoutMobile />,

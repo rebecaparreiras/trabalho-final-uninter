@@ -11,7 +11,7 @@ export default function HeaderWeb() {
     <header className={styles.header}>
       <div className={styles.inner}>
         <Link to="/web" className={styles.logo} aria-label="Raízes do Nordeste — Início">
-          <img src="/img/logo.png" alt="" aria-hidden="true" className={styles.logo_icone} />
+          <img src={`${import.meta.env.BASE_URL}img/logo.png`} alt="" aria-hidden="true" className={styles.logo_icone} />
           <span className={styles.logo_nome}>Raízes do Nordeste</span>
         </Link>
 

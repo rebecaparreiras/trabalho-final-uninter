@@ -5,7 +5,7 @@ export default function HeaderTotem({ subtitulo }) {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <img src="/img/logo.png" alt="Raízes do Nordeste" className={styles.logo_icone} />
+        <img src={`${import.meta.env.BASE_URL}img/logo.png`} alt="Raízes do Nordeste" className={styles.logo_icone} />
         <div className={styles.logo_texto}>
           <span className={styles.logo_nome}>Raízes do Nordeste</span>
           {subtitulo && <span className={styles.subtitulo}>{subtitulo}</span>}

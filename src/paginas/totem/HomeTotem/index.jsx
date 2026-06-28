@@ -88,7 +88,7 @@ export default function HomeTotem() {
             <p className={styles.banner_sub}>Monte o seu pedido de forma rápida e fácil.</p>
           </div>
           <img
-            src="/img/banner-2.jpg"
+            src={`${import.meta.env.BASE_URL}img/banner-2.jpg`}
             alt="Prato típico nordestino"
             className={styles.banner_img}
           />

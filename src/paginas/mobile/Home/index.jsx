@@ -85,7 +85,7 @@ export default function Home() {
             <p className={styles.banner_sub}>Boas vindas ao Raízes do Nordeste.</p>
           </div>
           <img
-            src="/img/banner-2.jpg"
+            src={`${import.meta.env.BASE_URL}img/banner-2.jpg`}
             alt="Prato típico nordestino"
             className={styles.banner_img}
           />

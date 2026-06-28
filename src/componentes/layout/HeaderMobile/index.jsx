@@ -21,7 +21,7 @@ export default function HeaderMobile({
             <ArrowLeft size={24} aria-hidden="true" />
           </button>
         ) : (
-          <img src="/img/logo.png" alt="Raízes do Nordeste" className={styles.avatar} />
+          <img src={`${import.meta.env.BASE_URL}img/logo.png`} alt="Raízes do Nordeste" className={styles.avatar} />
         )}
       </div>
 
