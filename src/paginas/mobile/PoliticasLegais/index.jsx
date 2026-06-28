@@ -4,7 +4,7 @@ import HeaderMobile from '../../../componentes/layout/HeaderMobile'
 import { politicaPrivacidade, termosDeUso, lgpd } from '../../../dados/politicas'
 import styles from './PoliticasLegais.module.css'
 
-const DISCLAIMER = 'Texto original retirado do site oficial da Domino\'s Pizzaria. Não condiz com o desenvolvimento do trabalho e possui caráter educativo apenas.'
+const DISCLAIMER = 'Texto legal simulado para fins acadêmicos. Não representa política jurídica real.'
 
 const abas = [
   { id: 'privacidade', rotulo: 'Privacidade', politica: politicaPrivacidade },
