@@ -1,0 +1,147 @@
+.pagina {
+  max-width: var(--largura-max-web);
+  margin: 0 auto;
+  padding: var(--espaco-12) var(--espaco-6);
+  min-height: calc(100vh - var(--altura-header-web));
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-8);
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+}
+
+.titulo {
+    font-size: var(--tamanho-lg);
+    color: var(--cor-texto-principal);
+}
+
+.subtitulo {
+  font-size: var(--tamanho-base);
+  color: var(--cor-texto-secundario);
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espaco-5);
+}
+
+.card {
+  background: var(--cor-superficie);
+  border: 1.5px solid var(--cor-borda-leve);
+  border-radius: var(--raio-lg);
+  padding: var(--espaco-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-4);
+  cursor: pointer;
+  transition: border-color var(--transicao-rapida), box-shadow var(--transicao-rapida);
+}
+
+.card:hover {
+  border-color: var(--cor-primaria);
+  box-shadow: var(--sombra-md);
+}
+
+.card_ativo {
+  border-color: var(--cor-primaria);
+  background: var(--cor-primaria-clara);
+}
+.card_header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--espaco-2);
+}
+.card_topo {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-2);
+}
+
+.pin {
+  color: var(--cor-primaria);
+  flex-shrink: 0;
+}
+
+.card_nome {
+  font-size: var(--tamanho-base);
+  font-weight: var(--peso-semibold);
+  color: var(--cor-texto-principal);
+}
+
+.badge_ativo {
+  font-size: var(--tamanho-xs);
+  font-weight: var(--peso-bold);
+  color: var(--cor-primaria);
+  background: white;
+  border: 1px solid var(--cor-primaria);
+  padding: 2px 8px;
+  border-radius: var(--raio-full);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.card_info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+}
+
+.endereco {
+  font-size: var(--tamanho-sm);
+  color: var(--cor-texto-principal);
+  line-height: 1.4;
+}
+
+.bairro {
+  font-size: var(--tamanho-xs);
+  color: var(--cor-texto-secundario);
+}
+
+.horario {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-1);
+  font-size: var(--tamanho-xs);
+  color: var(--cor-texto-secundario);
+}
+
+.horario svg {
+  flex-shrink: 0;
+}
+
+.card_rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--espaco-3);
+  border-top: 1px solid var(--cor-borda-leve);
+}
+
+.aberta {
+  font-size: var(--tamanho-xs);
+  font-weight: var(--peso-semibold);
+  color: var(--cor-sucesso);
+}
+
+.fechada {
+  font-size: var(--tamanho-xs);
+  font-weight: var(--peso-semibold);
+  color: var(--cor-texto-secundario);
+}
+
+.card_rodape svg {
+  color: var(--cor-texto-secundario);
+  
+}
+
+

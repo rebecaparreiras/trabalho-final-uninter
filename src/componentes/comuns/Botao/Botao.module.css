@@ -1,0 +1,93 @@
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espaco-2);
+  font-family: var(--fonte-corpo);
+  font-weight: var(--peso-semibold);
+  border-radius: var(--raio-md);
+  border: 2px solid transparent;
+  transition: background-color var(--transicao-rapida), border-color var(--transicao-rapida), opacity var(--transicao-rapida);
+  white-space: nowrap;
+  cursor: pointer;
+  text-align: center;
+}
+
+.botao:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* tamanhos */
+.pequeno {
+  font-size: var(--tamanho-sm);
+  padding: var(--espaco-2) var(--espaco-3);
+  min-height: 36px;
+}
+
+.medio {
+  font-size: var(--tamanho-base);
+  padding: var(--espaco-3) var(--espaco-5);
+  min-height: 48px;
+}
+
+.grande {
+  font-size: var(--tamanho-md);
+  padding: var(--espaco-4) var(--espaco-6);
+  min-height: 56px;
+}
+
+.cheio {
+  width: 100%;
+
+}
+
+/* variantes */
+.primario {
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-invertido);
+  border-color: var(--cor-primaria);
+}
+.primario:hover:not(:disabled) {
+  background-color: var(--cor-primaria-escura);
+  border-color: var(--cor-primaria-escura);
+}
+
+.secundario {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto-principal);
+  border-color: var(--cor-secundaria);
+}
+.secundario:hover:not(:disabled) {
+  filter: brightness(0.92);
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+.outline:hover:not(:disabled) {
+  background-color: var(--cor-primaria-clara);
+}
+
+
+.ghost {
+  background-color: transparent;
+  color: var(--cor-primaria);
+  border-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+.ghost:hover:not(:disabled) {
+  color: var(--cor-primaria-escura);
+}
+
+.neutro {
+  background-color: var(--cor-borda-leve);
+  color: var(--cor-texto-principal);
+   border-color: var(--cor-borda);
+}
+.neutro:hover:not(:disabled) {
+  background-color: var(--cor-borda);
+}

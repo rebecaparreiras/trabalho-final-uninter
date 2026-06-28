@@ -1,0 +1,254 @@
+.pagina {
+  max-width: var(--largura-max-web);
+  margin: 0 auto;
+  padding: var(--espaco-12) var(--espaco-6);
+  min-height: calc(100vh - var(--altura-header-web));
+}
+
+/* tela de convite */
+.convite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
+  gap: var(--espaco-6);
+}
+
+.star_icone {
+  color: var(--cor-secundaria);
+}
+
+.titulo {
+  font-size: var(--tamanho-2xl);
+  color: var(--cor-texto-principal);
+}
+
+.convite_desc {
+  font-size: var(--tamanho-base);
+  color: var(--cor-texto-secundario);
+  line-height: 1.7;
+}
+.beneficios_preview {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-3);
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda-leve);
+  border-radius: var(--raio-lg);
+  padding: var(--espaco-5);
+  width: 100%;
+}
+
+.benefit_item {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-3);
+  font-size: var(--tamanho-sm);
+  color: var(--cor-texto-secundario);
+}
+
+.benefit_item svg {
+  color: var(--cor-primaria);
+  flex-shrink: 0;
+}
+
+.btn_login {
+  display: block;
+  width: 100%;
+  padding: var(--espaco-4);
+  background: var(--cor-primaria);
+  color: var(--cor-texto-invertido);
+  border-radius: var(--raio-md);
+  font-weight: var(--peso-semibold);
+  font-size: var(--tamanho-base);
+  text-align: center;
+  transition: background-color var(--transicao-rapida);
+}
+
+.btn_login:hover {
+  background: var(--cor-primaria-escura);
+}
+
+
+/* logado */
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-6);
+}
+
+.titulo_pagina {
+  font-size: var(--tamanho-lg);
+  color: var(--cor-texto-principal);
+}
+
+.grid_top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--espaco-6);
+  align-items: stretch;
+}
+
+.grid_top > * {
+  height: 100%;
+}
+
+
+/* card de pontos */
+.card_pontos {
+  background: linear-gradient(135deg, var(--cor-primaria-escura), var(--cor-primaria));
+  border-radius: var(--raio-xl);
+  padding: var(--espaco-6);
+  color: var(--cor-texto-invertido);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-4);
+}
+
+.pontos_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ola {
+  font-size: var(--tamanho-base);
+  opacity: 0.85;
+}
+
+.nivel_texto {
+  font-size: var(--tamanho-sm);
+  font-weight: var(--peso-semibold);
+  opacity: 0.75;
+}
+
+.star_card {
+  color: var(--cor-secundaria);
+  opacity: 0.9;
+}
+
+.pontos_numero {
+  display: flex;
+  align-items: baseline;
+  gap: var(--espaco-2);
+}
+
+.pontos_valor {
+  font-size: var(--tamanho-4xl);
+  font-weight: var(--peso-bold);
+}
+
+.pontos_label {
+  font-size: var(--tamanho-base);
+  opacity: 0.8;
+}
+
+.barra_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+}
+
+.barra_fundo {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: var(--raio-full);
+  overflow: hidden;
+}
+
+.barra_progresso {
+  height: 100%;
+  background: var(--cor-secundaria);
+  border-radius: var(--raio-full);
+  transition: width 0.5s ease;
+}
+
+.barra_desc {
+  font-size: var(--tamanho-xs);
+  opacity: 0.75;
+}
+
+/* Cards de seções */
+.secao_card {
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda-leve);
+  border-radius: var(--raio-lg);
+  padding: var(--espaco-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-4);
+}
+
+.secao_titulo {
+  font-size: var(--tamanho-base);
+  font-weight: var(--peso-semibold);
+  color: var(--cor-texto-principal);
+}
+
+/* Cabeçalho de seção com ícone */
+.secao_header {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-2);
+  color: var(--cor-texto-secundario);
+}
+
+/* Como funciona — bullets estilo mobile */
+.regras {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-3);
+}
+
+.regras p {
+  font-size: var(--tamanho-sm);
+  color: var(--cor-texto-secundario);
+  padding-left: var(--espaco-4);
+  position: relative;
+  line-height: 1.5;
+}
+
+.regras p::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--cor-primaria);
+  font-weight: var(--peso-bold);
+}
+
+/* benefícios */
+.beneficios_lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espaco-4);
+  list-style: none;
+}
+
+.beneficio_item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espaco-3);
+}
+
+.beneficio_icone {
+  color: var(--cor-primaria);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.beneficio_nome {
+  display: block;
+  font-size: var(--tamanho-sm);
+  font-weight: var(--peso-semibold);
+  color: var(--cor-texto-principal);
+  margin-bottom: 2px;
+}
+
+.beneficio_desc {
+  font-size: var(--tamanho-xs);
+  color: var(--cor-texto-secundario);
+  line-height: 1.5;
+}

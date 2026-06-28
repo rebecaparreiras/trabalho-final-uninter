@@ -1,0 +1,38 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--tamanho-xs);
+  font-weight: var(--peso-semibold);
+  padding: 2px 8px;
+  border-radius: var(--raio-full);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+
+}
+
+.sazonal {
+  background-color: var(--cor-secundaria-clara);
+  color: #7A5A10;
+}
+
+.regional {
+  background-color: var(--cor-acento-clara);
+  color: var(--cor-acento);
+}
+
+.indisponivel {
+  background-color: var(--cor-borda-leve);
+  color: var(--cor-texto-desabilitado);
+}
+
+.novo {
+  background-color: var(--cor-primaria-clara);
+  color: var(--cor-primaria-escura);
+}
+
+.exclusivo {
+  background-color: #EDE0F8;
+  color: #6B21A8;
+}

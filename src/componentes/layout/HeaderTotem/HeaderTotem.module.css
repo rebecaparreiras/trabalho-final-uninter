@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--espaco-4) var(--espaco-5);
+  background-color: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda-leve);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-3);
+}
+
+.logo_icone {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--raio-full);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.logo_texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo_nome {
+  font-family: var(--fonte-titulo);
+  font-size: var(--tamanho-lg);
+  color: var(--cor-primaria);
+  line-height: 1.2;
+  font-weight:  var(--peso-semibold);
+}
+
+.subtitulo {
+  font-size: var(--tamanho-sm);
+  color: var(--cor-texto-secundario);
+}
+
+.idioma {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-2);
+  font-size: var(--tamanho-sm);
+  font-weight: var(--peso-medio);
+  color: var(--cor-texto-secundario);
+}

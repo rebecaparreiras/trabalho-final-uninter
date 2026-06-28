@@ -1,0 +1,223 @@
+/* mobile */
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  z-index: 300;
+  pointer-events: none;
+}
+
+.popup {
+  width: 100%;
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-invertido);
+  padding: var(--espaco-5) var(--espaco-5) var(--espaco-6);
+  border-radius: var(--raio-lg) var(--raio-lg) 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-4);
+  pointer-events: all;
+  box-shadow: var(--sombra-lg);
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-3);
+}
+
+.icone {
+  color: var(--cor-secundaria);
+  flex-shrink: 0;
+}
+
+.titulo {
+  font-family: var(--fonte-corpo);
+  font-size: var(--tamanho-base);
+  font-weight: var(--peso-semibold);
+  color: #fff;
+}
+
+.texto {
+  font-size: var(--tamanho-sm);
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+}
+
+.link {
+  color: var(--cor-secundaria);
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-3);
+}
+
+.checkbox_item {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-3);
+  font-size: var(--tamanho-sm);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.checkbox_item input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--cor-secundaria);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.acoes {
+  display: flex;
+  gap: var(--espaco-3);
+}
+
+.btn_recusar {
+    flex: 1;
+    padding: var(--espaco-3) var(--espaco-4);
+    background: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: var(--raio-md);
+    font-size: var(--tamanho-sm);
+    font-weight: var(--peso-semibold);
+    color: #fff;
+    cursor: pointer;
+    transition: border-color var(--transicao-rapida), background var(--transicao-rapida);
+}
+
+.btn_recusar:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn_aceitar {
+  flex: 1;
+  padding: var(--espaco-3) var(--espaco-4);
+  background: #fff;
+  border: 1.5px solid #fff;
+  border-radius: var(--raio-md);
+  font-size: var(--tamanho-sm);
+  font-weight: var(--peso-semibold);
+  color: var(--cor-primaria);
+  cursor: pointer;
+  transition: opacity var(--transicao-rapida);
+}
+
+
+.btn_aceitar:hover {
+  opacity: 0.9;
+}
+
+/* web */
+.barra_web {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 300;
+  background: var(--cor-superficie);
+  border-top: 1px solid var(--cor-borda);
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-8);
+  padding: var(--espaco-3) var(--espaco-8);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.06);
+}
+.web_info {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espaco-3);
+  flex: 1;
+  min-width: 0;
+}
+
+.icone_web {
+  color: var(--cor-primaria);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.web_titulo {
+  display: block;
+  font-size: var(--tamanho-sm);
+  font-weight: var(--peso-semibold);
+  color: var(--cor-texto-principal);
+  margin-bottom: var(--espaco-1);
+}
+
+.web_texto {
+  font-size: var(--tamanho-xs);
+  color: var(--cor-texto-secundario);
+  line-height: 1.5;
+}
+
+.checkboxes_web {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+  flex-shrink: 0;
+}
+
+.checkboxes_web .checkbox_item {
+  color: var(--cor-texto-principal);
+}
+
+.barra_web .link:hover {
+  color: var(--cor-primaria-escura);
+}
+
+.acoes_web {
+  display: flex;
+  gap: var(--espaco-3);
+  flex-shrink: 0;
+}
+
+.btn_recusar_web {
+  padding: var(--espaco-2) var(--espaco-4);
+  background: transparent;
+  border: 1.5px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  font-size: var(--tamanho-sm);
+  font-weight: var(--peso-semibold);
+  color: var(--cor-texto-principal);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color var(--transicao-rapida);
+}
+
+.btn_recusar_web:hover {
+  border-color: var(--cor-texto-principal);
+}
+
+.btn_aceitar_web {
+  padding: var(--espaco-2) var(--espaco-4);
+  background: var(--cor-primaria);
+  border: 1.5px solid var(--cor-primaria);
+  border-radius: var(--raio-md);
+  font-size: var(--tamanho-sm);
+  font-weight: var(--peso-semibold);
+  color: var(--cor-texto-invertido);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background var(--transicao-rapida);
+}
+
+.btn_aceitar_web:hover {
+  background: var(--cor-primaria-escura);
+  border-color: var(--cor-primaria-escura);
+}
+
+
+

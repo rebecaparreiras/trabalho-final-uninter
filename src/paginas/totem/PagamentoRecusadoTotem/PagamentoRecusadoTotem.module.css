@@ -1,0 +1,79 @@
+.pagina {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espaco-6);
+  padding: var(--espaco-8);
+  text-align: center;
+}
+
+.icone {
+  color: var(--cor-erro);
+}
+
+.titulo {
+  font-size: var(--tamanho-3xl);
+  color: var(--cor-texto-principal);
+}
+
+.mensagem {
+  font-size: var(--tamanho-lg);
+  color: var(--cor-texto-secundario);
+  line-height: 1.7;
+  max-width: 420px;
+}
+
+.acoes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-4);
+  width: 100%;
+  max-width: 380px;
+}
+
+/* botões */
+.btn_credito {
+  width: 100%;
+  padding: var(--espaco-5);
+  background: var(--cor-primaria);
+  color: var(--cor-texto-invertido);
+  border: none;
+  border-radius: var(--raio-md);
+  font-size: var(--tamanho-xl);
+  font-weight: var(--peso-semibold);
+  cursor: pointer;
+  transition: background-color var(--transicao-rapida);
+  min-height: 64px;
+}
+
+.btn_credito:hover {
+  background: var(--cor-primaria-escura);
+}
+
+.btn_cancelar {
+  width: 100%;
+  padding: var(--espaco-4);
+  background: transparent;
+  color: var(--cor-texto-secundario);
+  border: 1.5px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  font-size: var(--tamanho-lg);
+  font-weight: var(--peso-semibold);
+  cursor: pointer;
+  
+  transition: all var(--transicao-rapida);
+  min-height: 56px;
+}
+
+.btn_cancelar:hover {
+  border-color: var(--cor-erro);
+  color: var(--cor-erro);
+}

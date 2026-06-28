@@ -1,0 +1,51 @@
+.grupo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+}
+
+.label {
+  font-size: var(--tamanho-sm);
+  font-weight: var(--peso-medio);
+  color: var(--cor-texto-principal);
+}
+
+.obrigatorio {
+  color: var(--cor-erro);
+}
+
+.entrada {
+  width: 100%;
+  padding: var(--espaco-3) var(--espaco-4);
+  font-size: var(--tamanho-base);
+  color: var(--cor-texto-principal);
+  background-color: var(--cor-superficie);
+  border: 1.5px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  transition: border-color var(--transicao-rapida);
+  min-height: 48px;
+}
+
+.entrada::placeholder {
+  color: var(--cor-texto-desabilitado);
+}
+
+.entrada:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+}
+
+.comErro {
+  border-color: var(--cor-erro);
+}
+
+.textarea {
+  min-height: unset;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.mensagemErro {
+  font-size: var(--tamanho-xs);
+  color: var(--cor-erro);
+}

@@ -1,0 +1,117 @@
+@import './reset.css';
+
+:root {
+  /* cores */
+  --cor-primaria: #C4622D;
+  --cor-primaria-escura: #A3521E;
+  --cor-primaria-clara: #F0D5C8;
+
+  --cor-secundaria: #E8A838;
+  --cor-secundaria-clara: #FDF3DE;
+
+  --cor-acento: #4A7C59;
+  --cor-acento-clara: #D5E8DB;
+
+  /* neutros */
+  --cor-fundo: #FAF8F5;
+  --cor-superficie: #FFFFFF;
+  --cor-borda: #E8E4E0;
+  --cor-borda-leve: #F0EDE9;
+
+  /* texto */
+  --cor-texto-principal: #1C1C1C;
+  --cor-texto-secundario: #6B6B6B;
+  --cor-texto-invertido: #FFFFFF;
+  --cor-texto-link: #C4622D;
+  --cor-texto-desabilitado: #ABABAB;
+
+  /* feedback */
+  --cor-erro: #D94040;
+  --cor-erro-clara: #FDEAEA;
+  --cor-sucesso: #2E7D52;
+  --cor-sucesso-clara: #D5EDE1;
+  --cor-aviso: #E8A838;
+  --cor-aviso-clara: #FDF3DE;
+
+  /* tipografia */
+  --fonte-titulo: 'Unbounded', sans-serif;
+  --fonte-corpo: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --tamanho-xs: 0.75rem; 
+  --tamanho-sm: 0.875rem; 
+  --tamanho-base: 1rem;     
+  --tamanho-md: 1.125rem;
+  --tamanho-lg: 1.25rem;   
+  --tamanho-xl: 1.5rem;   
+  --tamanho-2xl: 1.875rem;  
+  --tamanho-3xl: 2.25rem;  
+
+  --peso-normal: 400;
+  --peso-medio: 500;
+  --peso-semibold: 600;
+  --peso-bold: 700;
+
+  /* espaçamentos */
+  --espaco-1: 0.25rem;
+  --espaco-2: 0.5rem; 
+  --espaco-3: 0.75rem; 
+  --espaco-4: 1rem;
+  --espaco-5: 1.25rem;
+  --espaco-6: 1.5rem;
+  --espaco-8: 2rem; 
+  --espaco-10: 2.5rem;
+  --espaco-12: 3rem;
+  --espaco-16: 4rem;
+
+  /* bordas */
+  --raio-sm: 6px;
+  --raio-md: 12px;
+  --raio-lg: 16px;
+  --raio-xl: 24px;
+  --raio-full: 9999px;
+
+  /* sombras */
+  --sombra-sm: 0 1px 4px rgba(0, 0, 0, 0.08);
+  --sombra-md: 0 4px 12px rgba(0, 0, 0, 0.10);
+  --sombra-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* transições */
+  --transicao-rapida: 150ms ease;
+  --transicao-normal: 250ms ease;
+
+  /* mobile */
+  --altura-header-mobile: 60px;
+  --altura-bottom-nav: 64px;
+
+  /* web */
+  --largura-max-web: 1200px;
+  --altura-header-web: 72px;
+
+  /* totem */
+  --largura-max-totem: 768px;
+}
+
+body {
+  font-family: var(--fonte-corpo);
+  font-size: var(--tamanho-base);
+  color: var(--cor-texto-principal);
+  background-color: var(--cor-fundo);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  line-height: 1.2;
+}
+
+h4, h5, h6 {
+  font-family: var(--fonte-corpo);
+  font-weight: var(--peso-semibold);
+  line-height: 1.3;
+}
+
+:focus-visible {
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: 2px;
+  border-radius: 2px;
+}

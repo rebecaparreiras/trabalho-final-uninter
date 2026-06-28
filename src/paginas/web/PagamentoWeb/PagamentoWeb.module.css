@@ -1,0 +1,49 @@
+.pagina {
+  max-width: var(--largura-max-web);
+  margin: 0 auto;
+  padding: var(--espaco-12) var(--espaco-6);
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - var(--altura-header-web));
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espaco-5);
+}
+
+.icone_wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--cor-primaria-clara);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icone {
+  color: var(--cor-primaria);
+}
+
+.titulo {
+  font-size: var(--tamanho-xl);
+  color: var(--cor-texto-principal);
+}
+
+.subtitulo {
+  font-size: var(--tamanho-sm);
+  color: var(--cor-texto-secundario);
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+.aviso  {
+  font-size: var(--tamanho-xs);
+  color: var(--cor-texto-secundario);
+}

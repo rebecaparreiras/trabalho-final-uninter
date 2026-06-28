@@ -1,0 +1,6 @@
+export { unidades } from './unidades'
+export { categorias, produtos, getProdutosPorUnidade, getProdutoPorId } from './produtos'
+export { promocoes, calcularDesconto } from './promocoes'
+export { dadosFidelidade } from './fidelidade'
+export { usuarioTeste, usuarioVisitante } from './usuario'
+export { taxaServico, etapasPedido, statusAtualMock, tempoEstimadoTotem, gerarNumeroPedido, gerarHorarioPedido } from './pedidos'

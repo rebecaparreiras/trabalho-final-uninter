@@ -1,0 +1,46 @@
+.pagina {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espaco-6);
+  padding: var(--espaco-8);
+  text-align: center;
+}
+
+.icone_wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--cor-primaria-clara);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icone {
+  color: var(--cor-primaria);
+}
+.titulo {
+  font-size: var(--tamanho-2xl);
+  color: var(--cor-texto-principal);
+}
+
+.subtitulo {
+  font-size: var(--tamanho-lg);
+  color: var(--cor-texto-secundario);
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.aviso {
+  font-size: var(--tamanho-base);
+  color: var(--cor-texto-secundario);
+}

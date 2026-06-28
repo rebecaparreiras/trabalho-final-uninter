@@ -1,0 +1,116 @@
+.pagina {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espaco-6);
+  padding: var(--espaco-8);
+  text-align: center;
+}
+
+.icone {
+  color: var(--cor-sucesso);
+}
+
+.titulo {
+  font-size: var(--tamanho-3xl);
+  color: var(--cor-texto-principal);
+}
+
+.subtitulo {
+  font-size: var(--tamanho-lg);
+  color: var(--cor-texto-secundario);
+}
+
+
+/* card do número do pedido */
+.numero_card {
+  background: linear-gradient(135deg, var(--cor-primaria-escura), var(--cor-primaria));
+  color: var(--cor-texto-invertido);
+  border-radius: var(--raio-xl);
+  padding: var(--espaco-6) var(--espaco-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espaco-2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.numero_label {
+  font-size: var(--tamanho-base);
+  opacity: 0.8;
+}
+
+.numero_valor {
+  font-size: 4rem;
+  font-weight: var(--peso-bold);
+  letter-spacing: 6px;
+  line-height: 1;
+}
+
+.numero_horario {
+  font-size: var(--tamanho-sm);
+  opacity: 0.7;
+}
+
+
+/* card do tempo estimado */
+.tempo_card {
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda-leve);
+  border-radius: var(--raio-xl);
+  padding: var(--espaco-5) var(--espaco-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    gap: var(--espaco-2);
+    width: 100%;
+  max-width: 400px;
+}
+
+.tempo_label {
+  font-size: var(--tamanho-sm);
+  color: var(--cor-texto-secundario);
+}
+
+.tempo_valor {
+  font-size: var(--tamanho-3xl);
+  color: var(--cor-primaria);
+  font-weight: var(--peso-bold);
+}
+
+
+.tempo_instrucao {
+  font-size: var(--tamanho-sm);
+  color: var(--cor-texto-secundario);
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+
+/* botão de novo pedido */
+.btn_novo {
+  padding: var(--espaco-4) var(--espaco-8);
+  background: var(--cor-primaria);
+  color: var(--cor-texto-invertido);
+  border: none;
+  border-radius: var(--raio-full);
+  font-size: var(--tamanho-xl);
+  font-weight: var(--peso-semibold);
+  cursor: pointer;
+  transition: background-color var(--transicao-rapida);
+  min-height: 64px;
+  min-width: 220px;
+}
+
+.btn_novo:hover {
+  background: var(--cor-primaria-escura);
+}
